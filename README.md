@@ -18,15 +18,23 @@ Hazelcast offers robust failover capabilities to ensure data availability and ap
 
 Hazelcast in Action During Failover:  
 Node Failure: A Hazelcast node fails due to hardware or software issues. 
+
 Detection: Other nodes detect the failure through missed heartbeats. 
+
 Data Rebalancing: Data partitions owned by the failed node are automatically migrated to remaining healthy nodes. 
+
 Client Redirection: Hazelcast clients are informed about the updated cluster topology. 
+
 Client Reconnection: Clients automatically reconnect to available nodes, potentially with a brief interruption.
+
 Backup Recovery: If backups are configured, data can be retrieved from the backup node to maintain consistency. 
 
 Benefits of Hazelcast Failover:  
 
 High Availability: Data remains available even during node failures. 
+
 Minimal Downtime: Clients automatically reconnect to maintain application continuity. 
+
 Data Consistency: Data rebalancing and backups ensure data integrity. 
+
 Scalability: Failover mechanisms work seamlessly as you add or remove nodes from the cluster.
