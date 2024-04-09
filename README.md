@@ -1,9 +1,10 @@
 # Hazelcast Project
 This project demonstrates basic operations on a Hazelcast map using a Java client. It showcases how to connect to a Hazelcast cluster, put a large number of objects into a map, and retrieve them.
 
-Hazelcast's Failover Mechanism  
+# Hazelcast's Failover Mechanism  
 
 Hazelcast offers robust failover capabilities to ensure data availability and application continuity in case of node failures. Here's a breakdown of its key mechanisms:  
+
 1. Distributed Data Partitioning:  Data is evenly distributed across cluster nodes, creating replicas and preventing a single point of failure. Partitioning strategies (e.g., random, key-based) determine how data is spread across nodes.
 
 2. Member Failure Detection:  Hazelcast actively monitors the health of each node using heartbeats. If a node doesn't respond within a set timeframe, it's considered failed.
@@ -16,7 +17,8 @@ Hazelcast offers robust failover capabilities to ensure data availability and ap
 
 6. Partition Migration (Even During Normal Operation):  Hazelcast can redistribute data partitions even when all nodes are operational. This helps balance load across the cluster and prevent bottlenecks.
 
-Hazelcast in Action During Failover:  
+# Hazelcast in Action During Failover:  
+
 Node Failure: A Hazelcast node fails due to hardware or software issues. 
 
 Detection: Other nodes detect the failure through missed heartbeats. 
@@ -29,7 +31,7 @@ Client Reconnection: Clients automatically reconnect to available nodes, potenti
 
 Backup Recovery: If backups are configured, data can be retrieved from the backup node to maintain consistency. 
 
-Benefits of Hazelcast Failover:  
+# Benefits of Hazelcast Failover:  
 
 High Availability: Data remains available even during node failures. 
 
